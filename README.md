@@ -15,6 +15,24 @@ This project demonstrates how to deploy a Flask web application to Azure App Ser
 4. Encountered `ModuleNotFoundError` for Azure packages
 5. Resolved using custom `startup.sh` to pip install dependencies
 6. Successfully deployed via `az webapp deploy`
+## 💡 How It Works
+
+1. **App Service** runs a Flask server via Gunicorn.
+2. The app authenticates via `DefaultAzureCredential` (uses Managed Identity).
+3. It fetches a JSON file from **Azure Blob Storage**.
+4. Parses the JSON and displays person details in HTML.
+
+## 🛠️ Deployment
+
+- App Service Plan: `F1 (Free Tier)`
+- Storage Account: `azudmzstorage97399`
+- Container: `secure-data`
+- Blob: `person.json`
+
+## 🧪 Sample Output
+Name: John Doe
+Email: john@example.com
+Role: Cloud Engineer
 
 ## Author
 Chiranjeevi Podapati
