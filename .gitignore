@@ -1,0 +1,44 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Virtual environment
+venv/
+env/
+.antenv/
+.antenv*/**
+
+# VS Code settings
+.vscode/
+
+# Environment variables
+.env
+*.env
+
+# Mac OS
+.DS_Store
+
+# Azure deployment artifacts
+*.zip
+*.tar.gz
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+crash.log
+*.tfplan
+
+# Logs
+*.log
+
+# IDEs
+.idea/
+
+# Misc
+*.bak
+*.swp
+*~
